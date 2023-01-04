@@ -1,10 +1,10 @@
-#Compte rendu Todo List 
+# Compte rendu Todo List 
 
-##Introduction : 
+## Introduction : 
 
 Nous allons à travers ce TP mettre en pratique les notions de Swift vues en cours afin de créer un gestionnaire de tâches à l’aide de XCode et de l’architecture MVC. Nous commencerons par créer le modèle de données puis nous ajouterons des vues pour chaque fonctionnalité. 
 
-###1. Conception du modèle de données 
+## 1. Conception du modèle de données 
 
 La première étape est de définir la structure d’une tâche. L’énoncé nous indique qu’une tâche doit être au minimum constituée d’un nom et d’une description. J’ai choisi d’ajouter un état à la tâche car il est essentiel de noter une tâche comme réalisée dans une Todo List. J’ai également ajouté une date au sein de la classe qui représente la date de l’échéance de la tâche afin de pour pouvoir réaliser un tri par date. 
 
@@ -19,7 +19,7 @@ Tous ces attributs réunis construisent la classe Todo définie par le diagramme
 |+ date : Date ![](images/Aspose.Words.80c06a44-e50a-4912-95db-ee3bb5410933.002.png)|
 |+ state : Bool ![](images/Aspose.Words.80c06a44-e50a-4912-95db-ee3bb5410933.002.png)|
 |+ init() : void ![](images/Aspose.Words.80c06a44-e50a-4912-95db-ee3bb5410933.002.png)|
-###2. Création du Storyboard et Programmation de l'application 
+## 2. Création du Storyboard et Programmation de l'application 
 
 J’ai créé trois vues ayant chacune leur objectif :  
 
@@ -31,7 +31,7 @@ J’ai créé trois vues ayant chacune leur objectif :
 
 *Figure 2 - Création des vues* 
 
-###3. Ajout de la date de réalisation 
+## 3. Ajout de la date de réalisation 
 
 J’ai donc trié les tâches par date à l’aide de la fonction *sortedby()* et mis en place des sections dans le tableview pour afficher les cellules de tâches dans des sections. 
 
@@ -52,7 +52,7 @@ Chaque Todo était donc mise dans la section correspondante à sa  date d’éch
 
 *Figure 4 - Tri par date* 
 
-###4. Ajout d'un moteur de recherche 
+## 4. Ajout d'un moteur de recherche 
 
 J’ai ajouté un UISearchBar dans le tableview pour implémenter cette fonctionnalité à l’application.  
 J’ai ensuite modifié le contenu du tableau de Section *data* lorsque le contenu de la barre de recherche est modifié.  
@@ -61,6 +61,6 @@ J’ai ensuite modifié le contenu du tableau de Section *data* lorsque le conte
 
 *Figure 5 - Recherche de tâches* 
 
-##Conclusion 
+## Conclusion 
 
 Ce projet a été une bonne introduction aux bases de la programmation mobile et plus précisément la programmation d’applications en Swift. Il nous a permis de mieux comprendre l’architecture MVC. 
