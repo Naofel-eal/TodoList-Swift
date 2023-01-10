@@ -39,7 +39,6 @@ class AddViewController: UIViewController, UITextFieldDelegate, UITextViewDelega
     var data: Todo?
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //let vc = segue.destination as! ViewController
         data = Todo(name: name.text!, desc: desc.text, date: datePicker.date, state: false)
     }
     
